@@ -4,7 +4,7 @@ const staticFile = require("../appModules/http-utils/static-file.js");
 const mimeTypes = require("../appModules/http-utils/mime-types.js");
 
 async function defaultRouteController(res, url) {
-    const extname = String(path.extname(url)).tolowerCase();
+    const extname = String(path.extname(url)).toLowerCase();
     if (extname in mimeTypes) {
         staticFile(res, url, extname);
     } else {
