@@ -1,1 +1,1 @@
-# games-ratingg
+# games-rating
