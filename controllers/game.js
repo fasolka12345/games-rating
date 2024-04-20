@@ -1,5 +1,5 @@
 const fs = require("fs").promises;
-const {getRandomGame} = require("./appModules/api");
+const {getRandomGame} = require("../appModules/api");
 
 async function gameRouteController(res) {
   fs.readFile("./dataset/rating.json", (err, ratingFile) => {
