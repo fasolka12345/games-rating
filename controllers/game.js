@@ -1,4 +1,5 @@
 const fs = require("fs").promises;
+const {config} = require('../appModules/rating');
 const {getRandomGame} = require("../appModules/api");
 
 async function gameRouteController(res) {
@@ -10,6 +11,7 @@ async function gameRouteController(res) {
     res.end(JSON.stringify(game));
   } catch (error) {
     res.statusCode = 500;
+    console.log(error);
     res.end("Internal Server Error");
   }
 } 

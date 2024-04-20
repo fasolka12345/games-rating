@@ -1,5 +1,4 @@
 const http = require('http');
-const path = require('path');
 const {mainRouteController, gameRouteController, voteRouteController, defaultRouteController} = require('./controllers/index.js');
 
 const PORT = 3005;
